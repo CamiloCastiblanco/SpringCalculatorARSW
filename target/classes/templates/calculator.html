@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Calculator</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <label> Resultado:</label><span th:text="${currentVal}"></span></label>
+  <form action="/calc">
+    <input type="text" name="number" >
+    <input type="submit" value="+" formaction="add">
+    <input type="submit" value="*" formaction="mult">
+    <input type="submit" value="-" formaction="resta">
+    <input type="submit" value="/" formaction="div">
+    <input type="submit" value="AC" formaction="ac">
+  </form>
+
+</body>
+</html>
